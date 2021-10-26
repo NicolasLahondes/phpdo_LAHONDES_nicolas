@@ -1,0 +1,43 @@
+=============
+Question 1: 
+=============
+
+"spl_autoload_register" sert à charger automatiquement les classes dans un répertoir si elles sont correctement nommées avec une seule ligne de code.
+Celà facilite la lecture du code et optimise ce dernier.
+
+=============
+Question 2: 
+=============
+
+L'héritage permet à des classes enfants de récupérer des propriétés ou des méthodes de classes parentes et, dans un même temps, de posséder ses propres méthodes.
+On peut donc généraliser des méthodes descendant de classes parentes qui seront disponibles pour plusieurs enfant par exemple. 
+Celà permet d'éviter d'écrire un code redondant, permet de s'éviter d'écrire du code inutile, clarifie la structure et la lisibilité du projet. Enfin si des modifications sur une
+méthodes doivent êtres faites dans une classe parente, tout ses enfants en bénéficie. (Ce qui peut être un avantage ou un inconvénient selon la situation...).
+Dans une autre mesure celà permet également de sécuriser le code...
+
+=============
+Question 3:
+=============
+
+class Personne {}
+{
+    public $nom;
+    public $prénom;
+    public $dateNaissance;
+}
+
+class Professeurs extends Personne {}
+{
+    public $nom;
+    public $prénom;
+    public $dateNaissance;
+    public $matiere;
+}
+
+class Enfant extends Personne {}
+{
+    public $nom;
+    public $prénom;
+    public $dateNaissance;
+    public $classe;
+}
